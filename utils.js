@@ -18,3 +18,15 @@ const generateRandomValue = (max, dataset) =>{
 // dataset manip functions
 const combine2arr = (arr1, arr2) => [...new Set([...arr1, ...arr2])];
 const combine2arrNoDupe = (arr1, arr2) => [...new Set([...arr1, ...arr2])];
+
+// Leet Code Solutions
+
+const twoSum = (numsArr, target) =>{
+  for (let i = 0; i < nums.length; i++) {
+      for (let j = 0; j < nums.length; j++) {
+          if (nums[i] + nums[j] === target && i !== j) {
+              return [i, j];
+          }
+      }
+  }
+};
